@@ -1,0 +1,100 @@
+:root {
+    --primaryColor: #843D59;
+    --panelColor: #FFE8F1;
+    --menuColor: #3B2333;
+    --paddingGap: 0.9em;
+}
+
+body {
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: calc(0.6*var(--paddingGap)) var(--paddingGap);
+    background-color: var(--primaryColor);
+}
+
+.header > .menuIcon {
+    width: 2em;
+    height: auto;
+}
+
+.header > .logOut {
+    background-color: var(--menuColor);
+    color: #FFFFFF;
+    border: 0;
+    padding: 0 2em;
+    border-radius: 10em;
+}
+
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: var(--paddingGap) var(--paddingGap);
+
+    gap: var(--paddingGap);
+}
+
+.mainPage > .profile {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1em;
+    background-color: var(--panelColor);
+}
+
+.mainPage > .profile > .profilePic {
+    height: 8em;
+    border-radius: 50%;
+}
+
+.mainPage > .profile > .profileText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.2em;
+}
+
+.mainPage > .profile > .profileText > .name {
+    font-size: 1.7em;
+    font-weight: 600;
+    padding-bottom: 0.2em;
+}
+
+.mainPage > .profile > .profileText > .designation,
+.mainPage > .profile > .profileText > .department {
+    font-weight: 500;
+}
+
+.mainPage > .options {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--panelColor);
+}
+
+.mainPage > .options > .createClass {
+    background-color: var(--primaryColor);
+    color: #FFFFFF;
+    border: 0;
+    padding: 0.7em 1.5em;
+    border-radius: 10em;
+}
