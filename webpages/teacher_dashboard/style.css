@@ -24,18 +24,71 @@ body {
     background-color: var(--primaryColor);
 }
 
-.header > .menuIcon {
+/* .hamberger-menu {
     width: 2em;
-    height: auto;
+    height: 2em;
+
+    background-image: url(/images/menu-icon.svg);
+    background-size: 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    background-color: #843D59;
+} */
+
+.hamberger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 0;   
+    border: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    width: 27px;
 }
 
-.header > .logOut {
+.hamberger .navbar, .hamberger:after, .hamberger::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #FFFFFF;
+    margin: 4.5px 0;
+    transition: 0.4s;
+}
+
+
+/* Menu icon to corss icon*/
+.hamberger.is-active:before {
+    transform: rotate(45deg) translate(3px, 11px);
+}
+
+.hamberger.is-active:after {
+    transform: rotate(-45deg) translate(0px, -9px);
+}
+
+.hamberger.is-active .navbar {
+    opacity: 0;
+}
+/**/
+
+.logOut {
     background-color: var(--menuColor);
     color: #FFFFFF;
     border: 0;
     padding: 0 2em;
     border-radius: 10em;
 }
+
+/* Navigation Bar */
+.navigation {
+    position: fixed;
+    list-style: none;
+    top: 0;
+    left: 0;
+}
+/**/
 
 .mainPage {
     display: flex;
