@@ -25,19 +25,8 @@ body {
     background-color: var(--primaryColor);
 }
 
-/* .hamberger-menu {
-    width: 2em;
-    height: 2em;
-
-    background-image: url(/images/menu-icon.svg);
-    background-size: 2em;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0;
-    background-color: #843D59;
-} */
-
-.hamberger {
+/* Menu icon to corss icon*/
+.hamburger {
     position: relative;
     display: block;
     cursor: pointer;
@@ -50,7 +39,7 @@ body {
     z-index: 99;
 }
 
-.hamberger .navbar, .hamberger:after, .hamberger::before {
+.hamburger .navbar, .hamburger:after, .hamburger::before {
     display: block;
     content: '';
     width: 100%;
@@ -60,19 +49,17 @@ body {
     transition: var(--menuTransition);
 }
 
-
-/* Menu icon to corss icon*/
-.hamberger.is-active:before {
+.hamburger.is-active:before {
     transform: rotate(45deg) translate(3px, 11px);
     background-color: #FFFFFF;
 }
 
-.hamberger.is-active:after {
+.hamburger.is-active:after {
     transform: rotate(-45deg) translate(0px, -9px);
     background-color: #FFFFFF;
 }
 
-.hamberger.is-active .navbar {
+.hamburger.is-active .navbar {
     opacity: 0;
 }
 /**/
@@ -174,10 +161,10 @@ body {
     background-color: var(--panelColor);
 }
 
-.mainPage > .options > .createClass {
+/* .mainPage > .options > .createClass {
     background-color: var(--primaryColor);
     color: #FFFFFF;
     border: 0;
     padding: 0.7em 1.5em;
     border-radius: 10em;
-}
+} */
