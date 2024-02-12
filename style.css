@@ -64,14 +64,6 @@ body {
 }
 /**/
 
-.logOut {
-    background-color: var(--menuColor);
-    color: #FFFFFF;
-    border: 0;
-    padding: 0 2em;
-    border-radius: 10em;
-}
-
 /* Navigation Bar */
 .navigation {
     position: fixed;
@@ -83,7 +75,7 @@ body {
     background-color: var(--menuColor);
     padding-top: 3em;
     transition: var(--menuTransition);
-
+    
     display: flex;
     flex-direction: column;
     a {
@@ -93,7 +85,7 @@ body {
         border: 0;
         transition: 0.2s;
     }
-
+    
     a:hover {
         padding: calc(0.5*var(--paddingGap)) var(--paddingGap);
         color: #FFFFFF;
@@ -113,10 +105,17 @@ body {
     flex-wrap: wrap;
     /* height: 100vh; */
     margin: var(--paddingGap) var(--paddingGap);
-
+    
     gap: var(--paddingGap);
 }
 
+.logOut {
+    background-color: var(--menuColor);
+    color: #FFFFFF;
+    border: 0;
+    padding: 0 2em;
+    border-radius: 10em;
+}
 
 
 
