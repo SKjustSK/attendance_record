@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
     <script defer src = "javascript.js"></script>
 </head>
@@ -19,18 +19,21 @@
         <a class = "aboutUs" href = "../teacher_dashboard/">About Us</a>
     </nav>
 
-    <div class = "loginContainer">
-        <div class = "loginBox">
+    <div class = "mainPage">
+        <div class = "loginContainer">
             <div class = "loginText">Login</div>
             <form class = "loginInput">
-                <label for="fname">Email Id</label>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Password</label>
-                <input type="text" id="lname" name="lname">
+                <div class = "email">
+                    <label for="fname" class = "text">Email</label>
+                    <input type="text" id="fname" name="fname" class = "box">
+                </div> 
+                <div class = "password">
+                    <label for="lname" class = "text">Password</label>
+                    <input type="password" id="lname" name="lname" class = "box">
+                </div>
             </form>
             <button class = "loginButton">Login</button>
         </div>
     </div>
-
 </body>
 </html>
