@@ -160,10 +160,16 @@ body {
 
 .mainPage .loginContainer .loginInput .box {
     border: 3px solid #ebebeb;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
     height: 35px;
-    border-radius: 0.5em;;
+    border-radius: 0.4em;
 }
 
+.mainPage .loginContainer .loginInput .box:focus {
+    border: 3px solid orange;
+} 
 
 .mainPage .loginContainer .loginButton {
     display: flex;
