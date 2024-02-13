@@ -1,0 +1,23 @@
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    padding: var(--paddingGap);
+    gap: 20px;
+}
+
+.mainPage .subjectName {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.mainPage .scheduleLecture {
+    border: 0;
+    background-color: var(--primaryColor);
+    border-radius: 2em;
+    width: 12em;
+    padding: 0.7em 2em;
+    font-size: 1em;
+    cursor: pointer;
+}

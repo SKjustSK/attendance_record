@@ -1,11 +1,3 @@
-.logOut {
-    background-color: var(--menuColor);
-    color: #FFFFFF;
-    border: 0;
-    padding: 0 2em;
-    border-radius: 10em;
-}
-
 .mainPage {
     display: flex;
     flex-direction: column;
@@ -45,40 +37,5 @@
 .mainPage > .profile > .profileText > .designation,
 .mainPage > .profile > .profileText > .department {
     font-weight: 500;
-}
-
-.mainPage > .table {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.table > div,
-.table > a {
-    display: flex;
-    padding: calc(0.5*var(--paddingGap));
-}
-
-.table > a {
-    text-decoration: none;
-    color: var(--textColor);
-    transition: 0.2s;
-}
-
-.table > a:hover {
-    transform: scale(1.012);
-}
-
-.table > .heading {
-    font-weight: 600;
-    border-bottom: 1px solid #000000;
-}
-
-.table .code {
-    width: 80px;
-}
-
-.table .subject {
-    flex: 1;
 }
 
