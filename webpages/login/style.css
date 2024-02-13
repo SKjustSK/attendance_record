@@ -73,12 +73,12 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    background-color: #4C004C;
-    color: white;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
     border: 0;
     cursor: pointer;
     padding: 0.5em 3em;
-    border: 3px solid #4C004C;
+    border: 2px solid var(--primaryColor);
     border-radius: 0.5em;
     width: 50px;
 }
