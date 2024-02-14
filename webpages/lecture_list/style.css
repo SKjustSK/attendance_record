@@ -12,6 +12,12 @@
     margin-top: 10px;
 }
 
+.mainPage .section {
+    margin: 0;
+    padding: 0;
+    margin: -10px 0;
+}
+
 .mainPage .scheduleLecture {
     border: 0;
     background-color: var(--primaryColor);
