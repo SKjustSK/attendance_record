@@ -12,16 +12,6 @@
     margin-top: 10px;
 }
 
-.mainPage .markAttendance {
-    border: 0;
-    background-color: var(--primaryColor);
-    border-radius: 2em;
-    width: 12em;
-    padding: 0.7em 2em;
-    font-size: 1em;
-    cursor: pointer;
-}
-
 .mainPage .totalAttendance {
     margin: 0;
     padding: 0;
