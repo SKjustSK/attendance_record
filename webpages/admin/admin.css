@@ -64,4 +64,45 @@
     width: 90vw;
 }
 
+/**/
+#adminDashboard {
+    display: flex;
+    flex-direction: column;
+    margin: var(--paddingGap) var(--paddingGap);
+    gap: var(--paddingGap);
+}
+
+#adminDashboard > .profile {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: calc(100vw - 2*var(--paddingGap));
+}
+
+#adminDashboard > .profile > .profilePic {
+    height: 8em;
+    border-radius: 50%;
+}
+
+#adminDashboard > .profile > .profileText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+}
+
+#adminDashboard > .profile > .profileText > .name {
+    font-size: 1.7em;
+    font-weight: 600;
+    padding-bottom: 0.2em;
+}
+
+#adminDashboard > .profile > .profileText > .designation,
+#adminDashboard > .profile > .profileText > .department {
+    font-weight: 500;
+}
 
