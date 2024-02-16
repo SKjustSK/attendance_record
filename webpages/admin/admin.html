@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="admin.css">
+    <script defer src = "admin.js"></script>
     <link rel="stylesheet" href="./dropDown.css">
     <link rel="stylesheet" href="../../menu.css">
     <link rel="stylesheet" href="../../tables.css">
@@ -24,23 +25,111 @@
         <div class="dropdown item">
             <button class="dropbtn">Add</button>
             <div class="dropdown-content">
-              <a href="./pages/addSubject/addSubject.html">Subject</a>
-              <a href="#">Student</a>
-              <a href="#">Teacher</a>
+                <a href="#" class = "addSubject toForm">Subject</a>
+                <a href="#" class = "addStudent toForm">Student</a>
+                <a href="#" class = "addTeacher toForm">Teacher</a>
             </div>
         </div>
 
         <div class="dropdown item">
             <button class="dropbtn">Remove</button>
             <div class="dropdown-content">
-              <a href="#">Subject</a>
-              <a href="#">Student</a>
-              <a href="#">Teacher</a>
+              <a href="#" class = "removeSubject toForm">Subject</a>
+              <a href="#" class = "removeStudent toForm">Student</a>
+              <a href="#" class = "removeTeacher toForm">Teacher</a>
             </div>
         </div>
 
         <a class = "aboutUs" href = "../../index.html">About Us</a>
     </nav>
+
+    <!-- The order of items in "dropdown-content" class must be same as the html content  -->
+    <!-- Add Subject -->
+    <section class = "mainPage addSubjectForm form">
+        <h1 class = "title">Add a Subject</h1>
+        <form class = "addSubject">
+            <label for = "subjectCode" class = "text">Subject Code</label>
+            <input id = "subjectCode" type = "text" class = "box">
+            <label for = "subjectName" class = "text">Subject Name</label>
+            <input id = "subjectName" type = "text" class = "box">
+            <button id = "submit">Add</button>
+        </form>
+    </section>
+
+    <!-- Add Student -->
+    <section class = "mainPage addStudentForm form">
+        <h1 class = "title">Add a Student</h1>
+        <form class = "addStudent">
+            <label for = "studentName" class = "text">Students Name</label>
+            <input id = "studentName" type = "text" class = "box">
+            <label for = "studentID" class = "text">Student ID</label>
+            <input id = "studentID" type = "text" class = "box">
+            <label for = "studentPassword" class = "text">Password</label>
+            <input id = "studentPassword" type = "password" class = "box">
+            <label for = "studentConfirmPassword" class = "text">Confirm Password</label>
+            <input id = "studentConfirmPassword" type = "password" class = "box">
+            <button id = "submit">Add</button>
+        </form>
+    </section>
+
+    <!-- Add Teacher -->
+    <section class = "mainPage addTeacher form">
+        <h1 class = "title">Add a Teacher</h1>
+        <form class = "addTeacher">
+            <label for = "teacherName" class = "text">Teachers Name</label>
+            <input id = "teacherName" type = "text" class = "box">
+            <label for = "teacherUsername" class = "text">Username</label>
+            <input id = "teacherUsername" type = "text" class = "box">
+            <label for = "teacherPassword" class = "text">Password</label>
+            <input id = "teacherPassword" type = "password" class = "box">
+            <label for = "teacherConfirmPassword" class = "text">Confirm Password</label>
+            <input id = "teacherConfirmPassword" type = "password" class = "box">
+            <button id = "submit">Add</button>
+        </form>
+    </section>
+
+    <!-- Remove Subject -->
+    <section class = "mainPage removeSubject form">
+        <h1 class = "title">Remove a Subject</h1>
+        <form class = "removeSubject">
+            <label for = "subjectName" class = "text">Select subject to remove</label>
+            <select class = "selectList">
+                <option value = "CSP101">CSP101</option>
+                <option value = "CSP102">CSP102</option>
+                <option value = "ECT101">ECT101</option>
+            </select>
+            <button id = "submit">Remove</button>
+        </form>
+    </section>
+
+    <!-- Remove Student  -->
+    <section class = "mainPage removeStudent form">
+        <h1 class = "title">Remove a Student</h1>
+        <form class = "removeStudent">
+            <label for = "subjectName" class = "text">Select student to remove</label>
+            <select class = "selectList">
+                <option value = "2023KUEC2016">2023KUEC2016</option>
+                <option value = "2023KUEC2002">2023KUEC2002</option>
+                <option value = "2023KUCP1010">2023KUCP1010</option>
+            </select>
+            <button id = "submit">Remove</button>
+        </form>
+    </section>
+
+    <!-- Remove Teacher -->
+    <section class = "mainPage removeTeacher form">
+        <h1 class = "title">Remove a Teacher</h1>
+        <form class = "removeTeacher">
+            <label for = "teacherName" class = "text">Select teacher to remove</label>
+            <select class = "selectList">
+                <option value = "example-1">John Doe</option>
+                <option value = "example-2">Lorem Ipsum</option>
+                <option value = "example-3">Doe John Ipsum Lorem</option>
+            </select>
+            <button id = "submit">Remove</button>
+        </form>
+    </section>
+
 
 </body>
 </html>
