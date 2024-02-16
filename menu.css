@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 :root {
     --primaryColor: #00BBAA;
-    --panelColor: #9dd5d461;
+    --panelColor: #85b6b561;
     --menuColor: #505050;
     --textColor: #000000;
     --textAltColor: #ffffff;
@@ -9,7 +12,7 @@
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Manrope', 'Inter', Arial, sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -25,6 +28,12 @@ body {
     background-color: var(--primaryColor);
     padding: calc(0.6*var(--paddingGap)) var(--paddingGap);
 }
+
+/*Panel*/
+.panel {
+    background-color: var(--panelColor);
+    border-radius: 0.7em;
+} 
 
 /* Menu icon to corss icon*/
 .hamburger {
@@ -56,7 +65,7 @@ body {
 }
 
 .hamburger.is-active:after {
-    transform: rotate(-45deg) translate(0px, -9px);
+    transform: rotate(-45deg) translate(1px, -9px);
     background-color: #FFFFFF;
 }
 
@@ -64,12 +73,6 @@ body {
     opacity: 0;
 }
 /**/
-
-/*Panel*/
-.panel {
-    background-color: var(--panelColor);
-    border-radius: 0.7em;
-} 
 
 /* Navigation Bar */
 .navigation {
@@ -107,6 +110,7 @@ body {
 
 /*Log Out*/
 .logOut {
+    font-family: 'Manrope', 'Inter', Arial, sans-serif;
     background-color: var(--menuColor);
     color: #FFFFFF;
     border: 0;
