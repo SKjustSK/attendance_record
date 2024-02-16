@@ -1,60 +1,69 @@
-/* Style The Dropdown Button */
-.dropbtn {
-    background: none;
-    color: white;
-    font-size: 16px;
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    margin: var(--paddingGap);
+    height: 100vh;
+    gap: 2em;
+}
+
+.mainPage .title {
+    font-size: 2em;
     padding: 0;
-    border: none;
-    cursor: pointer;
-    transition: 0.2s;
-}
-  
-  /* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
+    margin: 0;
+    margin-top: 0.5em;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #444444;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.mainPage .addSubject {
+    display: flex;
+    flex-direction: column;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 13px 16px;
-    text-decoration: none;
-    display: block;
+.mainPage .text {
+    font-size: 1.3em;
+    font-weight: 300;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: var(--panelColor);
+.mainPage .box {
+    border: 3px solid #ebebeb;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    height: 35px;
+    font-size: 1.1em;
+    margin-bottom: 2em;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+#subjectCode {
+    width: 320px;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover {
-    background-color: var(--panelColor); 
-}
-.dropdown:hover .dropbtn{
-    background-color: var(--panelColor);  
-    background: none;
+#subjectName {
+    width: 90vw;
 }
 
-.navigation .item {
-    padding: calc(0.6*var(--paddingGap)) var(--paddingGap);
-    color: var(--textAltColor);
+@media only screen and (max-width: 360px) {
+    #submit {
+        align-self: center;
+    }
+}
+
+.mainPage .box:focus {
+    outline: 0;
+    border-bottom: 3px solid orange;
+}
+
+.mainPage #submit {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
     border: 0;
-    transition: 0.2s;
+    cursor: pointer;
+    padding: 0.5em 3em;
+    border: 2px solid var(--primaryColor);
+    border-radius: 3em;
+    width: 200px;
 }
+
+ 
