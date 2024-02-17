@@ -27,11 +27,17 @@ nav.navigation {
 }
 
 /* Log In */
-.mainPage {
+.mainPage,
+#studentLogin {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+}
+
+#teacherLogin,
+#adminLogin {
+    display: none;
 }
 
 .loginContainer {
@@ -40,7 +46,7 @@ nav.navigation {
     justify-content: center;
     align-items: stretch;
     border-radius: 0.5rem;
-    height: 400px;
+    height: 450px;
     width: 320px;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.185);
     margin-bottom: 3em; /*remove to perfectly center*/
@@ -55,7 +61,7 @@ nav.navigation {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
 }
 
@@ -112,6 +118,38 @@ nav.navigation {
 
 .mainPage .loginContainer .loginButton:hover {
     background-color: rgba(255, 255, 255, 0.128);
+}
+
+.notA {
+    margin: 1.5em 0 0.5em 0;
+    align-self: center;
+}
+
+.otherLoginBtns {
+    display: flex;
+    gap: 3em;
+    align-self: center;
+    text-decoration: underline;
+}
+
+.teacherLoginBtn,
+.adminLoginBtn,
+.studentLoginBtn {
+    cursor: pointer;
+}
+
+.teacherLoginBtn:hover,
+.adminLoginBtn:hover,
+.studentLoginBtn:hover {
+    color: orange;
+    text-decoration: orange underline;
+}
+
+.teacherLoginBtn:focus,
+.adminLoginBtn:focus,
+.studentLoginBtn:focus {
+    color: orange;
+    text-decoration: orange underline;
 }
 
 
