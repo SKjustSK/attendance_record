@@ -1,0 +1,112 @@
+body {
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23a4a4a4' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%233d3d3d' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23949494' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23373737' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23858585' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23313131' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23767676' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%232c2c2c' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23676767' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23262626' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23595959' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23212121' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Nav bar and Colors*/
+.header {
+    background-color: var(--adminColor);
+}
+
+.panel {
+    background-color: var(--adminPanelColor);
+}
+
+.navigation {
+    background-color: var(--menuColor);
+    a:hover {
+        background-color: var(--adminPanelColor);
+    }
+}
+
+#aboutUsHamburger .navbar, #aboutUsHamburger:after, #aboutUsHamburger:before {
+    background-color: #f2f2f2;
+}
+
+/**/
+.title{
+    font-family: 'Manrope', 'Inter', Arial, sans-serif;
+    width:300px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100vw;
+    height: 70vh;
+}
+.about > .aboutContent
+{
+    width: 300px;
+    height: 336.4px;
+    margin: 3px 15px;
+    border-radius:10px;
+    transition: all;
+    transition-duration: 0.3s
+}
+.about > .aboutContent:hover{
+    
+    box-shadow: 2px 2px 20px  rgba(6, 6, 6, 0.551);
+}
+.about .aboutContent .photo
+{
+    border-radius: 600px;
+    display: block;
+    padding: 15px;
+    width: 140.96px;
+    height: 140.96px;
+    margin-top: 14px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.about .aboutContent .photo:hover
+{
+    width: 155.96px;
+    height: 155.96px;
+}
+.about .aboutContent .detail
+{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+.i4
+{
+    border-radius: 700px;
+}
+.name
+{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.id{
+    font-size: 18px;
+}
+.email
+{
+    margin-top: 8px;
+    font-size: 18px;
+}
+i
+{
+    margin-top: 15px;
+    margin-left: 5px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+i:hover{
+    transform: scale(1.4);
+}
