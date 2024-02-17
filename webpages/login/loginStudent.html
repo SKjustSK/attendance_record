@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginStudent.css">
+    <script defer src = "loginStudent.js"></script>
+    <title>Student Login Page</title>
+</head>
+<body>
+    <header class="loginStudent_header">
+        <button class="loginStudent_hamburger">
+            <div class="loginStudent_navbar"></div>
+        </button>
+        <!-- <button class="loginStudent_logOut">Log Out</button> -->
+    </header>
+
+    <nav class="loginStudent_navigation">
+        <a class="loginStudent_aboutUs" href = "../aboutUs/aboutUs.html">About Us</a>
+    </nav>
+
+    <!-- I will be hiding mainPage class to make everything work in one page
+        , so make sure to change classess/names for forms of respective login containers  -->
+
+    <!-- Student Login  -->
+    <div class="loginStudent_mainPage" id = "loginStudent_studentLogin">
+        <div class="loginStudent_loginContainer">
+            <div class="loginStudent_loginText">Student Login</div>
+            <form class="loginStudent_loginInput">
+                <div class="loginStudent_email">
+                    <label for="fname" class="loginStudent_text">Email</label>
+                    <input type="text" id="fname" name="fname" class="loginStudent_box">
+                </div> 
+                <div class="loginStudent_password">
+                    <label for="lname" class="loginStudent_text">Password</label>
+                    <input type="password" id="lname" name="lname" class="loginStudent_box">
+                </div>
+            </form>
+            <button class="loginStudent_loginButton">Login</button>
+
+            <div class="loginStudent_notA">Not a Student?</div>
+            <div class="loginStudent_otherLoginBtns">
+                <a class="loginStudent_teacherLoginBtn">Teacher login</a>
+                <a class="loginStudent_adminLoginBtn">Admin login</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

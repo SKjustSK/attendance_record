@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Subject To Teacher Page</title>
+    <link rel="stylesheet" href="adminAssignSubjectToTeacher.css">
+    <script defer src = "adminAssignSubjectToTeacher.js"></script>
+</head>
+<body>
+    <header class="ASTT_header">
+        <button class="ASTT_hamburger" id="ASTT_adminHamburger">
+            <div class="ASTT_navbar"></div>
+        </button>
+        <button class="ASTT_logOut">Log Out</button>
+    </header>
+
+    <nav class="ASTT_navigation">
+        <a class="ASTT_dashboard" href = "admin.html">Dashboard</a>
+
+        <div class="ASTT_dropdown">
+            <button class="ASTT_dropbtn">Add</button>
+            <div class="ASTT_dropdown-content">
+                <a href="#" class="ASTT_addSubject">Subject</a>
+                <a href="#" class="ASTT_addTeacher">Teacher</a>
+                <a href="#" class="ASTT_addStudent">Student</a>
+            </div>
+        </div>
+
+        <!-- <div class="ASTT_dropdown">
+            <button class="ASTT_dropbtn">Remove</button>
+            <div class="ASTT_dropdown-content">
+              <a href="#" class="ASTT_removeSubject">Subject</a>
+              <a href="#" class="ASTT_removeTeacher">Teacher</a>
+              <a href="#" class="ASTT_removeStudent">Student</a>
+            </div>
+        </div> -->
+
+        <div class="ASTT_dropdown">
+            <button class="ASTT_dropbtn">Assign Subject to</button>
+            <div class="ASTT_dropdown-content">
+                <a href="#" class="ASTT_assignTeacher">Teacher</a>
+              <a href="#" class="ASTT_assignStudent">Student</a>
+            </div>
+        </div>
+
+        <a class="ASTT_aboutUs" href = "../aboutUs/aboutUs.html">About Us</a>
+    </nav>
+
+     <!-- Assign Subject to Teacher-->
+     <section class="ASTT_mainPage">
+        <h1 class="ASTT_title">Assign Subject to Teacher</h1>
+        <form class="ASTT_assignTeacher">
+            <label for = "teacherName" class="ASTT_text">Select Teacher</label>
+            <select class="ASTT_selectList">
+                <option value = "example-1">John Doe</option>
+                <option value = "example-2">Lorem Ipsum</option>
+                <option value = "example-3">Doe John Ipsum Lorem</option>
+            </select>
+            <label for="subjectName" class="ASTT_text">Select Subject to Assign</label>
+            <select class="ASTT_selectList">
+                <option value = "CSP101">CSP101</option>
+                <option value = "CSP102">CSP102</option>
+                <option value = "ECT101">ECT101</option>
+            </select>
+            <button id="ASTT_submit">Assign</button>
+        </form>
+    </section>
+
+</body>
+</html>

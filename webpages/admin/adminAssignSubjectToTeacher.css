@@ -26,7 +26,7 @@ body {
     height: 100vh;
 }
 
-.A_header {
+.ASTT_header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +35,7 @@ body {
 }
 
 /* Menu icon to corss icon*/
-.A_hamburger {
+.ASTT_hamburger {
     position: relative;
     display: block;
     cursor: pointer;
@@ -48,7 +48,7 @@ body {
     z-index: 99;
 }
 
-.A_hamburger .A_navbar, .A_hamburger:after, .A_hamburger::before {
+.ASTT_hamburger .ASTT_navbar, .ASTT_hamburger:after, .ASTT_hamburger::before {
     display: block;
     content: '';
     width: 100%;
@@ -58,23 +58,23 @@ body {
     transition: var(--menuTransition);
 }
 
-.A_hamburger.A_is-active:before {
+.ASTT_hamburger.ASTT_is-active:before {
     transform: rotate(45deg) translate(3px, 11px);
     background-color: #FFFFFF;
 }
 
-.A_hamburger.A_is-active:after {
+.ASTT_hamburger.ASTT_is-active:after {
     transform: rotate(-45deg) translate(1px, -9px);
     background-color: #FFFFFF;
 }
 
-.A_hamburger.A_is-active .A_navbar {
+.ASTT_hamburger.ASTT_is-active .ASTT_navbar {
     opacity: 0;
 }
 /**/
 
 /* Navigation Bar */
-.A_navigation {
+.ASTT_navigation {
     position: fixed;
     top: 0;
     left: -100%;
@@ -103,13 +103,13 @@ body {
     }
 }
 
-.A_navigation.A_is-active {
+.ASTT_navigation.ASTT_is-active {
     left: 0;
 }
 /**/
 
 /*Log Out*/
-.A_logOut {
+.ASTT_logOut {
     font-family: 'Manrope', 'Inter', Arial, sans-serif;
     background-color: var(--menuColor);
     color: #FFFFFF;
@@ -120,7 +120,7 @@ body {
 }
 
 /* Style The Dropdown Button */
-.A_dropbtn {
+.ASTT_dropbtn {
     background: none;
     color: white;
     font-size: 16px;
@@ -131,13 +131,13 @@ body {
 }
   
   /* The container <div> - needed to position the dropdown content */
-.A_dropdown {
+.ASTT_dropdown {
     position: relative;
     display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
-.A_dropdown-content {
+.ASTT_dropdown-content {
     display: none;
     position: absolute;
     top: 35px;
@@ -148,7 +148,7 @@ body {
 }
 
 /* Links inside the dropdown */
-.A_dropdown-content a {
+.ASTT_dropdown-content a {
     color: white;
     padding: 13px 16px;
     text-decoration: none;
@@ -156,25 +156,25 @@ body {
 }
 
 /* Change color of dropdown links on hover */
-.A_dropdown-content a:hover {
+.ASTT_dropdown-content a:hover {
     background-color: var(--adminPanelColor);
 }
 
 /* Show the dropdown menu on hover */
-.A_dropdown:hover .A_dropdown-content {
+.ASTT_dropdown:hover .ASTT_dropdown-content {
     display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.A_dropdown:hover {
+.ASTT_dropdown:hover {
     background-color: var(--adminPanelColor); 
 }
-.A_dropdown:hover .A_dropbtn{
+.ASTT_dropdown:hover .ASTT_dropbtn{
     background-color: var(--adminPanelColor);  
     background: none;
 }
 
-.A_navigation .A_dropdown {
+.ASTT_navigation .ASTT_dropdown {
     padding: calc(0.6*var(--paddingGap)) var(--paddingGap);
     color: var(--textAltColor);
     border: 0;
@@ -192,28 +192,28 @@ body {
 }
 
 /*Nav bar and Colors*/
-.A_header {
+.ASTT_header {
     background-color: var(--adminColor);
 }
 
-.A_navigation {
+.ASTT_navigation {
     background-color: var(--menuColor);
     a:hover {
         background-color: var(--adminPanelColor);
     }
 }
 
-#A_adminHamburger .A_navbar, #A_adminHamburger:after, #A_adminHamburger:before {
+#ASTT_adminHamburger .ASTT_navbar, #ASTT_adminHamburger:after, #ASTT_adminHamburger:before {
     background-color: #f2f2f2;
 }
 
-.A_mainPage #A_submit {
+.ASTT_mainPage #ASTT_submit {
     background-color: var(--adminColor);
     color: #f2f2f2;
 }
 /**/
-.A_mainPage {
-    display: none;
+.ASTT_mainPage {
+    display: flex;
     flex-direction: column;
     align-items: start;
     margin: var(--paddingGap);
@@ -221,25 +221,25 @@ body {
     gap: 2em;
 }
 
-.A_mainPage .A_title {
+.ASTT_mainPage .ASTT_title {
     font-size: 2em;
     padding: 0;
     margin: 0;
     margin-top: 0.5em;
 }
 
-.A_mainPage form {
+.ASTT_mainPage form {
     display: flex;
     flex-direction: column;
 }
 
-.A_mainPage .A_text {
+.ASTT_mainPage .ASTT_text {
     font-size: 1.3em;
     padding-bottom: 0.5em;
     font-weight: 500;
 }
 
-.A_mainPage .A_box {
+.ASTT_mainPage .ASTT_box {
     background: none;
     border: 3px solid #929292;
     border-top: 0;
@@ -251,12 +251,12 @@ body {
     width: 300px;
 }
 
-.A_mainPage .A_box:focus {
+.ASTT_mainPage .ASTT_box:focus {
     outline: 0;
     border-bottom: 3px solid orange;
 }
 
-.A_mainPage #A_submit {
+.ASTT_mainPage #ASTT_submit {
     display: flex;
     justify-content: center;
     border: 0;
@@ -267,25 +267,25 @@ body {
     width: 200px;
 }
 
-.A_mainPage .A_selectList {
+.ASTT_mainPage .ASTT_selectList {
     padding: 0.5em 0;
     margin: 0.5em 0.1em 1.5em;
 }
 
 /*Form specific elements*/
-#A_subjectName {
+#ASTT_subjectName {
     width: 90vw;
 }
 
 /**/
-#A_adminDashboard {
+#ASTT_adminDashboard {
     display: flex;
     flex-direction: column;
     margin: var(--paddingGap) var(--paddingGap);
     gap: var(--paddingGap);
 }
 
-#A_adminDashboard > .A_profile {
+#ASTT_adminDashboard > .ASTT_profile {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -298,12 +298,12 @@ body {
     background-color: var(--adminPanelColor);
 }
 
-#A_adminDashboard > .A_profile > .A_profilePic {
+#ASTT_adminDashboard > .ASTT_profile > .ASTT_profilePic {
     height: 8em;
     border-radius: 50%;
 }
 
-#A_adminDashboard > .A_profile > .A_profileText {
+#ASTT_adminDashboard > .ASTT_profile > .ASTT_profileText {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -311,14 +311,14 @@ body {
     gap: 0.2em;
 }
 
-#A_adminDashboard > .A_profile > .A_profileText > .A_name {
+#ASTT_adminDashboard > .ASTT_profile > .ASTT_profileText > .ASTT_name {
     font-size: 1.7em;
     font-weight: 600;
     padding-bottom: 0.2em;
 }
 
-#A_adminDashboard > .A_profile > .A_profileText > .A_designation,
-#A_adminDashboard > .A_profile > .A_profileText > .A_department {
+#ASTT_adminDashboard > .ASTT_profile > .ASTT_profileText > .ASTT_designation,
+#ASTT_adminDashboard > .ASTT_profile > .ASTT_profileText > .ASTT_department {
     font-weight: 500;
 }
 

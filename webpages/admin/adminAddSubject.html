@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="adminAddSubject.css">
+    <script defer src = "adminAddSubject.js"></script>
+</head>
+<body>
+    <header class="AASUB_header">
+        <button class="AASUB_hamburger" id="AASUB_adminHamburger">
+            <div class="AASUB_navbar"></div>
+        </button>
+        <button class="AASUB_logOut">Log Out</button>
+    </header>
+
+    <nav class="AASUB_navigation">
+        <a class="AASUB_dashboard" href = "admin.html">Dashboard</a>
+
+        <div class="AASUB_dropdown">
+            <button class="AASUB_dropbtn">Add</button>
+            <div class="AASUB_dropdown-content">
+                <a href="#" class="AASUB_addSubject">Subject</a>
+                <a href="#" class="AASUB_addTeacher">Teacher</a>
+                <a href="#" class="AASUB_addStudent">Student</a>
+            </div>
+        </div>
+
+        <!-- <div class="AASUB_dropdown">
+            <button class="AASUB_dropbtn">Remove</button>
+            <div class="AASUB_dropdown-content">
+              <a href="#" class="AASUB_removeSubject">Subject</a>
+              <a href="#" class="AASUB_removeTeacher">Teacher</a>
+              <a href="#" class="AASUB_removeStudent">Student</a>
+            </div>
+        </div> -->
+
+        <div class="AASUB_dropdown">
+            <button class="AASUB_dropbtn">Assign Subject to</button>
+            <div class="AASUB_dropdown-content">
+                <a href="#" class="AASUB_assignTeacher">Teacher</a>
+              <a href="#" class="AASUB_assignStudent">Student</a>
+            </div>
+        </div>
+
+        <a class="AASUB_aboutUs" href = "../aboutUs/aboutUs.html">About Us</a>
+    </nav>
+
+     <!-- Add Subject -->
+     <section class="AASUB_mainPage">
+        <h1 class="AASUB_title">Add a Subject</h1>
+        <form class="AASUB_addSubject">
+            <label for = "subjectCode" class="AASUB_text">Subject Code</label>
+            <input id="AASUB_subjectCode" type = "text" class="AASUB_box">
+            <label for = "subjectName" class="AASUB_text">Subject Name</label>
+            <input id="AASUB_subjectName" type = "text" class="AASUB_box">
+            <button id="AASUB_submit">Add</button>
+        </form>
+    </section>
+
+</body>
+</html>

@@ -5,68 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecture List</title>
     <link rel="stylesheet" href="lecAttendTeach.css">
-    <link rel="stylesheet" href="../../menu.css">
-    <link rel="stylesheet" href="../../tables.css">
-    <script defer src = "../../menu.js"></script>
+    <script defer src = "lecAttendTeach.js"></script>
 </head>
 <body>
-    <header class = "header">
-        <button class = "hamburger">
-            <div class = "navbar"></div>
+    <header class="LAT_header">
+        <button class="LAT_hamburger">
+            <div class="LAT_navbar"></div>
         </button>
-        <button class = "logOut">Log Out</button>
+        <button class="LAT_logOut">Log Out</button>
     </header>
 
-    <nav class = "navigation">
-        <a class = "dashboard" href = "../teacher_dashboard/teacher_dashboard.html">Dashboard</a>
-        <a class = "lectureList" href = "../lecture_list/lecture_list.html">Lecture List</a>
-        <a class = "aboutUs" href = "../aboutUs/aboutUs.html">About Us</a>
+    <nav class="LAT_navigation">
+        <a class="LAT_dashboard" href = "../teacher_dashboard/teacher_dashboard.html">Dashboard</a>
+        <a class="LAT_lectureList" href = "../lecture_list/lecture_list.html">Lecture List</a>
+        <a class="LAT_aboutUs" href = "../aboutUs/aboutUs.html">About Us</a>
     </nav>
     
     <!-- Actual code starts from here -->
-    <section class = "mainPage">
-        <h1 class = "subjectName">ECT103 - Circuit Theory</h1>
-        <h2 class = "lectureNumber">Lecture 1<!-- - Section A--></h2>
+    <section class="LAT_mainPage">
+        <h1 class="LAT_subjectName">ECT103 - Circuit Theory</h1>
+        <h2 class="LAT_lectureNumber">Lecture 1<!-- - Section A--></h2>
         <!-- Insert your QR in this div -->
-        <div class = " QRcontainer panel" >
-            <div class = "detailsContainer">
+        <div class="LAT_QRcontainer" >
+            <div class="LAT_detailsContainer">
                 <h3>Class details: </h3>
-                <div class = "line"></div>
-                <div class = "details">
+                <div class="LAT_line"></div>
+                <div class="LAT_details">
                     <!-- <p>Section: <span>A</span></p> -->
                     <p>Date: <span>16/01/2024</span></p>
                     <p>Time: <span>10:00</span></p>
                 </div>
             </div>
-            <img class = "QRcode" src = "tempQR.png">
+            <img class="LAT_QRcode" src = "tempQR.png">
         </div>
-        <button class = "deleteLecture">Delete this Lecture</button>
+        <button class="LAT_deleteLecture">Delete this Lecture</button>
 
-        <section class = "table panel">
-            <div class = "heading">
-                <span class = "serialNumber">Sr. No.</span>
-                <span class = "studentID">Student ID</span>
-                <span class = "attendance">Attendance</span>
+        <section class="LAT_table">
+            <div class="LAT_heading">
+                <span class="LAT_serialNumber">Sr. No.</span>
+                <span class="LAT_studentID">Student ID</span>
+                <span class="LAT_attendance">Attendance</span>
             </div>
-            <a class = "entry" href = "#">
-                <span class = "serialNumber">1</span>
-                <span class = "studentID">2023KUEC2016</span>
-                <span class = "attendance">Present</span>
+            <a class="LAT_entry" href = "#">
+                <span class="LAT_serialNumber">1</span>
+                <span class="LAT_studentID">2023KUEC2016</span>
+                <span class="LAT_attendance">Present</span>
             </a>
-            <a class = "entry" href = "#">
-                <span class = "serialNumber">1</span>
-                <span class = "studentID">2023KUEC2016</span>
-                <span class = "attendance">Absent</span>
+            <a class="LAT_entry" href = "#">
+                <span class="LAT_serialNumber">1</span>
+                <span class="LAT_studentID">2023KUEC2016</span>
+                <span class="LAT_attendance">Absent</span>
             </a>
-            <a class = "entry" href = "#">
-                <span class = "serialNumber">1</span>
-                <span class = "studentID">2023KUEC2016</span>
-                <span class = "attendance"></span>
+            <a class="LAT_entry" href = "#">
+                <span class="LAT_serialNumber">1</span>
+                <span class="LAT_studentID">2023KUEC2016</span>
+                <span class="LAT_attendance"></span>
             </a>
-            <a class = "entry" href = "#">
-                <span class = "serialNumber">1</span>
-                <span class = "studentID">2023KUEC2016</span>
-                <span class = "attendance">Unknown</span>
+            <a class="LAT_entry" href = "#">
+                <span class="LAT_serialNumber">1</span>
+                <span class="LAT_studentID">2023KUEC2016</span>
+                <span class="LAT_attendance">Unknown</span>
             </a>
         </section>
     </section>

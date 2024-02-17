@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginAdmin.css">
+    <script defer src = "loginAdmin.js"></script>
+    <title>Admin Login Page</title>
+</head>
+<body>
+    <header class="loginAdmin_header">
+        <button class="loginAdmin_hamburger">
+            <div class="loginAdmin_navbar"></div>
+        </button>
+        <!-- <button class="loginAdmin_logOut">Log Out</button> -->
+    </header>
+
+    <nav class="loginAdmin_navigation">
+        <a class="loginAdmin_aboutUs" href = "../aboutUs/aboutUs.html">About Us</a>
+    </nav>
+
+    <!-- Admin Login  -->
+    <div class="loginAdmin_mainPage" id ="loginAdmin_adminLogin">
+        <div class="loginAdmin_loginContainer">
+            <div class="loginAdmin_loginText">Admin Login</div>
+            <form class="loginAdmin_loginInput">
+                <div class="loginAdmin_email">
+                    <label for="fname" class="loginAdmin_text">Email</label>
+                    <input type="text" id="fname" name="fname" class="loginAdmin_box">
+                </div> 
+                <div class="loginAdmin_password">
+                    <label for="lname" class="loginAdmin_text">Password</label>
+                    <input type="password" id="lname" name="lname" class="loginAdmin_box">
+                </div>
+            </form>
+            <button class="loginAdmin_loginButton">Login</button>
+
+            <div class="loginAdmin_notA">Not an Admin?</div>
+            <div class="loginAdmin_otherLoginBtns">
+                <a class="loginAdmin_studentLoginBtn">Student login</a>
+                <a class="loginAdmin_teacherLoginBtn">Teacher login</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

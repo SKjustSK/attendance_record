@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="adminAddTeacher.css">
+    <script defer src = "adminAddTeacher.js"></script>
+</head>
+<body>
+    <header class="AATEA_header">
+        <button class="AATEA_hamburger" id="AATEA_adminHamburger">
+            <div class="AATEA_navbar"></div>
+        </button>
+        <button class="AATEA_logOut">Log Out</button>
+    </header>
+
+    <nav class="AATEA_navigation">
+        <a class="AATEA_dashboard" href = "admin.html">Dashboard</a>
+
+        <div class="AATEA_dropdown">
+            <button class="AATEA_dropbtn">Add</button>
+            <div class="AATEA_dropdown-content">
+                <a href="#" class="AATEA_addSubject">Subject</a>
+                <a href="#" class="AATEA_addTeacher">Teacher</a>
+                <a href="#" class="AATEA_addStudent">Student</a>
+            </div>
+        </div>
+
+        <!-- <div class="AATEA_dropdown">
+            <button class="AATEA_dropbtn">Remove</button>
+            <div class="AATEA_dropdown-content">
+              <a href="#" class="AATEA_removeSubject">Subject</a>
+              <a href="#" class="AATEA_removeTeacher">Teacher</a>
+              <a href="#" class="AATEA_removeStudent">Student</a>
+            </div>
+        </div> -->
+
+        <div class="AATEA_dropdown">
+            <button class="AATEA_dropbtn">Assign Subject to</button>
+            <div class="AATEA_dropdown-content">
+                <a href="#" class="AATEA_assignTeacher">Teacher</a>
+              <a href="#" class="AATEA_assignStudent">Student</a>
+            </div>
+        </div>
+
+        <a class="AATEA_aboutUs" href = "../aboutUs/aboutUs.html">About Us</a>
+    </nav>
+
+    <!-- Add Teacher -->
+    <section class="AATEA_mainPage">
+        <h1 class="AATEA_title">Add a Teacher</h1>
+        <form class="AATEA_addTeacher">
+            <label for = "teacherName" class="AATEA_text">Teacher Name</label>
+            <input id="AATEA_teacherName" type = "text" class="AATEA_box">
+            <label for = "teacherUsername" class="AATEA_text">Username</label>
+            <input id="AATEA_teacherUsername" type = "text" class="AATEA_box">
+            <label for = "teacherPassword" class="AATEA_text">Password</label>
+            <input id="AATEA_teacherPassword" type = "password" class="AATEA_box">
+            <label for = "teacherConfirmPassword" class="AATEA_text">Confirm Password</label>
+            <input id="AATEA_teacherConfirmPassword" type = "password" class="AATEA_box">
+            <button id="AATEA_submit">Add</button>
+        </form>
+    </section>
+
+</body>
+</html>

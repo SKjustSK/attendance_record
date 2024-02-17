@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="admin.css">
+    <script defer src = "admin.js"></script>
+    <link rel="stylesheet" href="./dropDown.css">
+    <link rel="stylesheet" href="../../menu.css">
+    <link rel="stylesheet" href="../../tables.css">
+    <script defer src = "../../menu.js"></script>
+</head>
+<body>
+    <header class = "header ADMIN">
+        <button class = "hamburger" id="adminHamburger">
+            <div class = "navbar"></div>
+        </button>
+        <button class = "logOut">Log Out</button>
+    </header>
+
+    <nav class = "navigation">
+        <a class = "dashboard toForm" href = "admin.html">Dashboard</a>
+
+        <div class="dropdown item">
+            <button class="dropbtn">Add</button>
+            <div class="dropdown-content">
+                <a href="#" class = "addSubject toForm">Subject</a>
+                <a href="#" class = "addTeacher toForm">Teacher</a>
+                <a href="#" class = "addStudent toForm">Student</a>
+            </div>
+        </div>
+
+        <div class="dropdown item">
+            <button class="dropbtn">Remove</button>
+            <div class="dropdown-content">
+              <a href="#" class = "removeSubject toForm">Subject</a>
+              <a href="#" class = "removeTeacher toForm">Teacher</a>
+              <a href="#" class = "removeStudent toForm">Student</a>
+            </div>
+        </div>
+
+        <div class="dropdown item">
+            <button class="dropbtn">Assign Subject to</button>
+            <div class="dropdown-content">
+                <a href="#" class = "assignTeacher toForm">Teacher</a>
+              <a href="#" class = "assignStudent toForm">Student</a>
+            </div>
+        </div>
+
+        <a class = "aboutUs" href = "../aboutUs/aboutUs.html">About Us</a>
+    </nav>
+
+    <!-- Assign Subject to Student -->
+    <section class = "form">
+        <h1 class = "title">Assign Subject to Student</h1>
+        <form class = "assignStudent">
+            <label for = "studentID" class = "text">Select Student</label>
+            <select class = "selectList">
+                <option value = "2023KUEC2016">2023KUEC2016</option>
+                <option value = "2023KUEC2002">2023KUEC2002</option>
+                <option value = "2023KUCP1010">2023KUCP1010</option>
+            </select>
+            <label for="subjectName" class = "text">Select Subject to Assign</label>
+            <select class = "selectList">
+                <option value = "CSP101">CSP101</option>
+                <option value = "CSP102">CSP102</option>
+                <option value = "ECT101">ECT101</option>
+            </select>
+            <button id = "submit">Assign</button>
+        </form>
+    </section>
+
+</body>
+</html>

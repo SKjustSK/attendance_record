@@ -6,189 +6,58 @@
     <title>Admin Page</title>
     <link rel="stylesheet" href="admin.css">
     <script defer src = "admin.js"></script>
-    <link rel="stylesheet" href="./dropDown.css">
-    <link rel="stylesheet" href="../../menu.css">
-    <link rel="stylesheet" href="../../tables.css">
-    <script defer src = "../../menu.js"></script>
 </head>
 <body>
-    <header class = "header ADMIN">
-        <button class = "hamburger" id="adminHamburger">
-            <div class = "navbar"></div>
+    <header class="A_header">
+        <button class="A_hamburger" id="A_adminHamburger">
+            <div class="A_navbar"></div>
         </button>
-        <button class = "logOut">Log Out</button>
+        <button class="A_logOut">Log Out</button>
     </header>
 
-    <nav class = "navigation">
-        <a class = "dashboard toForm" href = "admin.html">Dashboard</a>
+    <nav class="A_navigation">
+        <a class="A_dashboard" href = "admin.html">Dashboard</a>
 
-        <div class="dropdown item">
-            <button class="dropbtn">Add</button>
-            <div class="dropdown-content">
-                <a href="#" class = "addSubject toForm">Subject</a>
-                <a href="#" class = "addTeacher toForm">Teacher</a>
-                <a href="#" class = "addStudent toForm">Student</a>
+        <div class="A_dropdown">
+            <button class="A_dropbtn">Add</button>
+            <div class="A_dropdown-content">
+                <a href="#" class="A_addSubject">Subject</a>
+                <a href="#" class="A_addTeacher">Teacher</a>
+                <a href="#" class="A_addStudent">Student</a>
             </div>
         </div>
 
-        <div class="dropdown item">
-            <button class="dropbtn">Remove</button>
-            <div class="dropdown-content">
-              <a href="#" class = "removeSubject toForm">Subject</a>
-              <a href="#" class = "removeTeacher toForm">Teacher</a>
-              <a href="#" class = "removeStudent toForm">Student</a>
+        <!-- <div class="A_dropdown">
+            <button class="A_dropbtn">Remove</button>
+            <div class="A_dropdown-content">
+              <a href="#" class="A_removeSubject">Subject</a>
+              <a href="#" class="A_removeTeacher">Teacher</a>
+              <a href="#" class="A_removeStudent">Student</a>
+            </div>
+        </div> -->
+
+        <div class="A_dropdown">
+            <button class="A_dropbtn">Assign Subject to</button>
+            <div class="A_dropdown-content">
+                <a href="#" class="A_assignTeacher">Teacher</a>
+              <a href="#" class="A_assignStudent">Student</a>
             </div>
         </div>
 
-        <div class="dropdown item">
-            <button class="dropbtn">Assign Subject to</button>
-            <div class="dropdown-content">
-                <a href="#" class = "assignTeacher toForm">Teacher</a>
-              <a href="#" class = "assignStudent toForm">Student</a>
-            </div>
-        </div>
-
-        <a class = "aboutUs" href = "../aboutUs/aboutUs.html">About Us</a>
+        <a class="A_aboutUs" href = "../aboutUs/aboutUs.html">About Us</a>
     </nav>
 
     <!-- The order of items in "dropdown-content" class must be same as the html content  -->
     <!-- Dashboard -->
-    <!-- please be careful using the 'form' class for this, i couldnt think of another way to change the code -->
-    <section class = "mainPage form" id = "adminDashboard">
-        <section class = "profile panel ADMIN">
-            <img class = "profilePic" src = "temp.png" alt="Your Profile Pic">
-            <div class = "profileText">
-                <div class = "name">John Doe</div>
-                <div class = "designation">Assistant Professor</div>
-                <div class = "department">Department of CSE</div>
+    <section class="A_mainPage" id = "A_adminDashboard">
+        <section class="A_profile">
+            <img class="A_profilePic" src = "temp.png" alt="Your Profile Pic">
+            <div class="A_profileText">
+                <div class="A_name">John Doe</div>
+                <div class="A_designation">Assistant Professor</div>
+                <div class="A_department">Department of CSE</div>
             </div>
         </section>
-    </section>
-
-    <!-- Add Subject -->
-    <section class = "form">
-        <h1 class = "title">Add a Subject</h1>
-        <form class = "addSubject">
-            <label for = "subjectCode" class = "text">Subject Code</label>
-            <input id = "subjectCode" type = "text" class = "box">
-            <label for = "subjectName" class = "text">Subject Name</label>
-            <input id = "subjectName" type = "text" class = "box">
-            <button id = "submit">Add</button>
-        </form>
-    </section>
-
-    <!-- Add Teacher -->
-    <section class = "form">
-        <h1 class = "title">Add a Teacher</h1>
-        <form class = "addTeacher">
-            <label for = "teacherName" class = "text">Teacher Name</label>
-            <input id = "teacherName" type = "text" class = "box">
-            <label for = "teacherUsername" class = "text">Username</label>
-            <input id = "teacherUsername" type = "text" class = "box">
-            <label for = "teacherPassword" class = "text">Password</label>
-            <input id = "teacherPassword" type = "password" class = "box">
-            <label for = "teacherConfirmPassword" class = "text">Confirm Password</label>
-            <input id = "teacherConfirmPassword" type = "password" class = "box">
-            <button id = "submit">Add</button>
-        </form>
-    </section>
-
-    <!-- Add Student -->
-    <section class = "form">
-        <h1 class = "title">Add a Student</h1>
-        <form class = "addStudent">
-            <label for = "studentName" class = "text">Student Name</label>
-            <input id = "studentName" type = "text" class = "box">
-            <label for = "studentID" class = "text">Student ID</label>
-            <input id = "studentID" type = "text" class = "box">
-            <label for = "studentPassword" class = "text">Password</label>
-            <input id = "studentPassword" type = "password" class = "box">
-            <label for = "studentConfirmPassword" class = "text">Confirm Password</label>
-            <input id = "studentConfirmPassword" type = "password" class = "box">
-            <button id = "submit">Add</button>
-        </form>
-    </section>
-
-    <!-- Remove Subject -->
-    <section class = "form">
-        <h1 class = "title">Remove a Subject</h1>
-        <form class = "removeSubject">
-            <label for = "subjectName" class = "text">Select subject to remove</label>
-            <select class = "selectList">
-                <option value = "CSP101">CSP101</option>
-                <option value = "CSP102">CSP102</option>
-                <option value = "ECT101">ECT101</option>
-            </select>
-            <button id = "submit">Remove</button>
-        </form>
-    </section>
-
-    <!-- Remove Teacher -->
-    <section class = "form">
-        <h1 class = "title">Remove a Teacher</h1>
-        <form class = "removeTeacher">
-            <label for = "teacherName" class = "text">Select teacher to remove</label>
-            <select class = "selectList">
-                <option value = "example-1">John Doe</option>
-                <option value = "example-2">Lorem Ipsum</option>
-                <option value = "example-3">Doe John Ipsum Lorem</option>
-            </select>
-            <button id = "submit">Remove</button>
-        </form>
-    </section>
-
-    <!-- Remove Student  -->
-    <section class = "form">
-        <h1 class = "title">Remove a Student</h1>
-        <form class = "removeStudent">
-            <label for = "studentID" class = "text">Select student to remove</label>
-            <select class = "selectList">
-                <option value = "2023KUEC2016">2023KUEC2016</option>
-                <option value = "2023KUEC2002">2023KUEC2002</option>
-                <option value = "2023KUCP1010">2023KUCP1010</option>
-            </select>
-            <button id = "submit">Remove</button>
-        </form>
-    </section>
-
-    <!-- Assign Teacher to Subject -->
-    <section class = "form">
-        <h1 class = "title">Assign Subject to Teacher</h1>
-        <form class = "assignTeacher">
-            <label for = "teacherName" class = "text">Select Teacher</label>
-            <select class = "selectList">
-                <option value = "example-1">John Doe</option>
-                <option value = "example-2">Lorem Ipsum</option>
-                <option value = "example-3">Doe John Ipsum Lorem</option>
-            </select>
-            <label for="subjectName" class = "text">Select Subject to Assign</label>
-            <select class = "selectList">
-                <option value = "CSP101">CSP101</option>
-                <option value = "CSP102">CSP102</option>
-                <option value = "ECT101">ECT101</option>
-            </select>
-            <button id = "submit">Assign</button>
-        </form>
-    </section>
-
-    <!-- Assign Student to Subject  -->
-    <section class = "form">
-        <h1 class = "title">Assign Subject to Student</h1>
-        <form class = "assignStudent">
-            <label for = "studentID" class = "text">Select Student</label>
-            <select class = "selectList">
-                <option value = "2023KUEC2016">2023KUEC2016</option>
-                <option value = "2023KUEC2002">2023KUEC2002</option>
-                <option value = "2023KUCP1010">2023KUCP1010</option>
-            </select>
-            <label for="subjectName" class = "text">Select Subject to Assign</label>
-            <select class = "selectList">
-                <option value = "CSP101">CSP101</option>
-                <option value = "CSP102">CSP102</option>
-                <option value = "ECT101">ECT101</option>
-            </select>
-            <button id = "submit">Assign</button>
-        </form>
     </section>
 
 </body>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Add Student Page</title>
+    <link rel="stylesheet" href="adminAddStudent.css">
+    <script defer src = "adminAddStudent.js"></script>
+</head>
+<body>
+    <header class="AASTD_header">
+        <button class="AASTD_hamburger" id="AASTD_adminHamburger">
+            <div class="AASTD_navbar"></div>
+        </button>
+        <button class="AASTD_logOut">Log Out</button>
+    </header>
+
+    <nav class="AASTD_navigation">
+        <a class="AASTD_dashboard" href = "admin.html">Dashboard</a>
+
+        <div class="AASTD_dropdown">
+            <button class="AASTD_dropbtn">Add</button>
+            <div class="AASTD_dropdown-content">
+                <a href="#" class="AASTD_addSubject">Subject</a>
+                <a href="#" class="AASTD_addTeacher">Teacher</a>
+                <a href="#" class="AASTD_addStudent">Student</a>
+            </div>
+        </div>
+
+        <!-- <div class="AASTD_dropdown">
+            <button class="AASTD_dropbtn">Remove</button>
+            <div class="AASTD_dropdown-content">
+              <a href="#" class="AASTD_removeSubject">Subject</a>
+              <a href="#" class="AASTD_removeTeacher">Teacher</a>
+              <a href="#" class="AASTD_removeStudent">Student</a>
+            </div>
+        </div> -->
+
+        <div class="AASTD_dropdown">
+            <button class="AASTD_dropbtn">Assign Subject to</button>
+            <div class="AASTD_dropdown-content">
+                <a href="#" class="AASTD_assignTeacher">Teacher</a>
+              <a href="#" class="AASTD_assignStudent">Student</a>
+            </div>
+        </div>
+
+        <a class="AASTD_aboutUs" href = "../aboutUs/aboutUs.html">About Us</a>
+    </nav>
+
+    <!-- Add Student -->
+    <section class="AASTD_mainPage">
+        <h1 class="AASTD_title">Add a Student</h1>
+        <form class="AASTD_addStudent">
+            <label for = "studentName" class="AASTD_text">Student Name</label>
+            <input id="AASTD_studentName" type = "text" class="AASTD_box">
+            <label for = "studentID" class="AASTD_text">Student ID</label>
+            <input id="AASTD_studentID" type = "text" class="AASTD_box">
+            <label for = "studentPassword" class="AASTD_text">Password</label>
+            <input id="AASTD_studentPassword" type = "password" class="AASTD_box">
+            <label for = "studentConfirmPassword" class="AASTD_text">Confirm Password</label>
+            <input id="AASTD_studentConfirmPassword" type = "password" class="AASTD_box">
+            <button id="AASTD_submit">Add</button>
+        </form>
+    </section>
+
+</body>
+</html>
