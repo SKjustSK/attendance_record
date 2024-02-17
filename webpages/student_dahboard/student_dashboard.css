@@ -38,6 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1em;
+    padding: var(--paddingGap);
 }
 
 .mainPage > .profile > .profilePic {
