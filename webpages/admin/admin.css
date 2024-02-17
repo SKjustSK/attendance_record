@@ -1,3 +1,36 @@
+body {
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23a4a4a4' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%233d3d3d' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23949494' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23373737' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23858585' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23313131' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23767676' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%232c2c2c' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23676767' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23262626' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23595959' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23212121' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Nav bar and Colors*/
+.header {
+    background-color: var(--adminColor);
+}
+
+.panel {
+    background-color: var(--adminPanelColor);
+}
+
+.navigation {
+    background-color: var(--menuColor);
+    a:hover {
+        background-color: var(--adminPanelColor);
+    }
+}
+
+#adminHamburger .navbar, #adminHamburger:after, #adminHamburger:before {
+    background-color: #f2f2f2;
+}
+
+.form #submit {
+    background-color: var(--adminColor);
+    color: #f2f2f2;
+}
+/**/
 .form {
     display: none;
     flex-direction: column;
@@ -26,7 +59,8 @@
 }
 
 .form .box {
-    border: 3px solid #ebebeb;
+    background: none;
+    border: 3px solid #929292;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -44,8 +78,6 @@
 .form #submit {
     display: flex;
     justify-content: center;
-    background-color: var(--primaryColor);
-    color: var(--textColor);
     border: 0;
     cursor: pointer;
     padding: 0.5em 3em;

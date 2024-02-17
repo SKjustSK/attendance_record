@@ -22,6 +22,10 @@ body {
     }
 }
 
+.mainPage .scheduleLecture {
+    background-color: var(--teacherColor);
+}
+
 /**/
 .mainPage {
     display: flex;
@@ -45,7 +49,6 @@ body {
 
 .mainPage .scheduleLecture {
     border: 0;
-    background-color: var(--primaryColor);
     border-radius: 2em;
     width: 12em;
     padding: 0.7em 2em;

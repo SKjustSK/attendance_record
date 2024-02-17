@@ -22,6 +22,9 @@ body {
     }
 }
 
+.hamburger .navbar, .hamburger:after, .hamburger::before {
+    background-color: #ffffff;
+}
 /**/
 .mainPage {
     display: flex;

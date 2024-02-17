@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Admin Page</title>
     <link rel="stylesheet" href="admin.css">
     <script defer src = "admin.js"></script>
     <link rel="stylesheet" href="./dropDown.css">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class = "header ADMIN">
-        <button class = "hamburger">
+        <button class = "hamburger" id="adminHamburger">
             <div class = "navbar"></div>
         </button>
         <button class = "logOut">Log Out</button>
@@ -81,7 +81,7 @@
     <section class = "form">
         <h1 class = "title">Add a Teacher</h1>
         <form class = "addTeacher">
-            <label for = "teacherName" class = "text">Teachers Name</label>
+            <label for = "teacherName" class = "text">Teacher Name</label>
             <input id = "teacherName" type = "text" class = "box">
             <label for = "teacherUsername" class = "text">Username</label>
             <input id = "teacherUsername" type = "text" class = "box">
@@ -97,7 +97,7 @@
     <section class = "form">
         <h1 class = "title">Add a Student</h1>
         <form class = "addStudent">
-            <label for = "studentName" class = "text">Students Name</label>
+            <label for = "studentName" class = "text">Student Name</label>
             <input id = "studentName" type = "text" class = "box">
             <label for = "studentID" class = "text">Student ID</label>
             <input id = "studentID" type = "text" class = "box">

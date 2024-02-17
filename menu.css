@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
-    /* --primaryColor: #00BBAA;
-    --panelColor: #85b6b561; */
     --menuColor: #505050;
     --textColor: #000000;
     --textAltColor: #ffffff;
@@ -14,6 +12,8 @@
     --studentPanelColor: #85b6b556;
     --teacherColor: #149712;
     --teacherPanelColor: #478b4556;
+    --adminColor: #242424;
+    --adminPanelColor: #3a3a3a3a;
 }
 
 body {
