@@ -1,3 +1,28 @@
+body {
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%234cccbc' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%232c73aa' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%2345c5b9' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%231265a6' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%233fbeb5' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%230057a1' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%2338b8b2' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%2300489a' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%2332b1ae' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23003992' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%232daaaa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%230b2888' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Nav bar and Colors*/
+.header {
+    background-color: var(--studentColor);
+}
+
+.panel {
+    background-color: var(--studentPanelColor);
+}
+
+.navigation {
+    background-color: var(--menuColor);
+    a:hover {
+        background-color: var(--studentPanelColor);
+    }
+}
+
+/**/
 .mainPage {
     display: flex;
     flex-direction: column;
@@ -41,7 +66,7 @@
 
 .mainPage .markAttendance {
     border: 0;
-    background-color: var(--primaryColor);
+    background-color: var(--studentColor);
     border-radius: 2em;
     width: 12em;
     padding: 0.7em 2em;

@@ -2,13 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
-    --primaryColor: #00BBAA;
-    --panelColor: #85b6b561;
+    /* --primaryColor: #00BBAA;
+    --panelColor: #85b6b561; */
     --menuColor: #505050;
     --textColor: #000000;
     --textAltColor: #ffffff;
     --paddingGap: 0.9em;
     --menuTransition: 0.5s;
+
+    --studentColor: #00BBAA;
+    --studentPanelColor: #85b6b556;
+    --teacherColor: #149712;
+    --teacherPanelColor: #478b4556;
 }
 
 body {
@@ -25,13 +30,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    background-color: var(--primaryColor);
     padding: calc(0.6*var(--paddingGap)) var(--paddingGap);
 }
 
 /*Panel*/
 .panel {
-    background-color: var(--panelColor);
     border-radius: 0.7em;
 } 
 
@@ -86,6 +89,8 @@ body {
     padding-top: 3em;
     transition: var(--menuTransition);
     
+    opacity: 0.9;
+
     display: flex;
     flex-direction: column;
     a {
